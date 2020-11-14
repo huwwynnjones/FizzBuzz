@@ -43,7 +43,7 @@ fn validate_input(input: &str) -> Result<u32, String> {
             }
         }
         Err(_) => Err(format!(
-            "The input must be a number between 0 and 100 exclusive, you gave: {}",
+            "The input must be a number between 0 and 107 exclusive, you gave: {}",
             input
         )),
     }
@@ -77,7 +77,7 @@ mod tests {
         assert_eq!(
             validate_input("cat"),
             Err(
-                "The input must be a number between 0 and 100 exclusive, you gave: cat".to_string()
+                "The input must be a number between 0 and 107 exclusive, you gave: cat".to_string()
             )
         );
     }
